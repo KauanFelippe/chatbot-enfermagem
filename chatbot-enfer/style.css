@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c5530;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#campoMensagem {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 2px solid #c8e6c9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+#campoMensagem:focus {
+    outline: none;
+    border-color: #66bb6a;
+    box-shadow: 0 0 0 3px rgba(102, 187, 106, 0.15);
+}
+
+button {
+    background-color: #a5d6a7; /* Verde claro suave */
+    color: #1b5e20;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #81c784; /* Tom um pouco mais forte no hover */
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.controle-fonte {
+    margin: 15px 0;
+    text-align: center;
+}
+
+#chat {
+    margin-top: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9fcf9;
+    font-size: 16px;
+}
+
+#chat p {
+    margin: 10px 0;
+    padding: 10px 14px;
+    border-radius: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+#chat p.usuario {
+    background-color: #c8e6c9;
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 4px;
+}
+
+#chat p.bot {
+    background-color: #e8f5e9;
+    align-self: flex-start;
+    margin-right: auto;
+    border-bottom-left-radius: 4px;
+    color: #1b5e20;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
